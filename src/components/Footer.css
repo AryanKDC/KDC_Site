@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -26,7 +26,8 @@ footer {
     max-width: 400px;
     text-align: left;
 }
-.col-two{
+
+.col-two {
     flex: 0.7;
     min-width: none;
     max-width: 300px;
@@ -34,15 +35,17 @@ footer {
     margin-left: 30px;
     margin-right: 50px;
 }
-.col-three{
+
+.col-three {
     flex: 0.7;
-    min-width: none ;
+    min-width: none;
     max-width: 300px;
     text-align: left;
     margin: auto;
     margin-left: -50px;
     margin-right: 70px;
 }
+
 .col-one img {
     height: 41px;
     width: 241px;
@@ -68,18 +71,22 @@ footer {
     margin-top: 15px;
 }
 
-.col-two p, .col-three p {
+.col-two p,
+.col-three p {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.col-two ul li, .col-three ul li {
+.col-two ul li,
+.col-three ul li {
     font-size: 14px;
     margin-bottom: 8px;
     cursor: pointer;
 }
-.col-two li, .col-three li{
+
+.col-two li,
+.col-three li {
     margin-left: 25px;
     margin-top: 14px;
 }
@@ -92,11 +99,12 @@ footer {
     }
 }
 
-@media (min-width: 1199){
-    footer{
+@media (min-width: 1199) {
+    footer {
         margin-left: 80px;
     }
-    .col-one{
+
+    .col-one {
         margin-left: 800px;
         margin-top: -10px;
     }
@@ -114,32 +122,40 @@ footer {
         height: auto;
     }
 
-    .col-one{
+    .col-one {
         margin-top: -80px;
     }
-    .col-one, .col-two, .col-three {
+
+    .col-one,
+    .col-two,
+    .col-three {
         max-width: 300px;
         margin: auto;
         margin-right: -40px;
     }
-    .col-two, .col-three{
+
+    .col-two,
+    .col-three {
         margin-top: 13px;
     }
-    .socio-icon img{
+
+    .socio-icon img {
         width: 25px;
         height: 25px;
     }
 }
 
-@media(max-width: 890px){
-    .col-two, .col-three{
+@media(max-width: 890px) {
+
+    .col-two,
+    .col-three {
         margin-top: 0px;
     }
 }
 
-@media (max-width: 564px){
-    
-    .col-three{
+@media (max-width: 564px) {
+
+    .col-three {
         padding-top: -70px;
     }
 }
@@ -160,18 +176,21 @@ footer {
         margin-top: 30px;
     }
 
-    .col-two{
+    .col-two {
         margin-left: -250px;
     }
-    .col-three{
+
+    .col-three {
         margin-right: -180px;
         margin-top: -280px;
     }
 
-    .col-two, .col-three {
+    .col-two,
+    .col-three {
         display: inline-block;
         vertical-align: top;
-        max-width: 45%; /* Adjust width to fit side by side */
+        max-width: 45%;
+        /* Adjust width to fit side by side */
         text-align: left;
     }
 
@@ -182,60 +201,71 @@ footer {
     .col-three {
         margin-left: 5%;
     }
-    .socio-icon{
+
+    .socio-icon {
         justify-content: center;
     }
 }
 
-@media (max-width: 576px){
-    .col-two{
+@media (max-width: 576px) {
+    .col-two {
         margin-left: -170px;
     }
 }
-@media(max-width: 546px){
-    .col-three{
+
+@media(max-width: 546px) {
+    .col-three {
         margin-top: -295px;
     }
 }
-@media (max-width: 525px){
-    .col-three{
+
+@media (max-width: 525px) {
+    .col-three {
         margin-top: -295px;
     }
 }
-@media (max-width: 517px){
-    .col-three{
+
+@media (max-width: 517px) {
+    .col-three {
         margin-top: -310px;
     }
 }
+
 @media (max-width: 506px) {
-    .col-three{
+    .col-three {
         margin-top: -310px;
     }
 }
-@media (max-width: 501px){
-    .col-three{
+
+@media (max-width: 501px) {
+    .col-three {
         margin-top: -330px;
     }
 }
-@media(max-width: 495px){
-    .col-three{
+
+@media(max-width: 495px) {
+    .col-three {
         margin-top: -330px;
     }
-    .copyright{
+
+    .copyright {
         margin-top: 30px;
     }
 }
-@media(max-width: 485px){
-    .col-three{
+
+@media(max-width: 485px) {
+    .col-three {
         margin-top: -360px;
     }
 }
+
 /* Extra Small Screens (Tiny Phones) */
 @media (max-width: 480px) {
-    .col-one{
+    .col-one {
         margin-left: 20px;
         margin-right: -20px;
     }
+
     .col-one img {
         width: 180px;
     }
@@ -243,36 +273,47 @@ footer {
     .col-one p {
         font-size: 12px;
     }
-    .col-two{
+
+    .col-two {
         margin-left: 95px;
         margin-top: -30px;
     }
-    .col-three{
+
+    .col-three {
         margin-left: -130px;
         margin-top: -30px;
     }
 
-    .col-two p, .col-three p {
+    .col-two p,
+    .col-three p {
         font-size: 16px;
     }
 
-    .col-two ul li, .col-three ul li {
+    .col-two ul li,
+    .col-three ul li {
         font-size: 12px;
     }
-    .socio-icon img{
+
+    .socio-icon img {
         height: 15px;
         width: 15px;
     }
-    .copyright{
+
+    .copyright {
         margin-top: -20px;
     }
 }
+
 @media (max-width: 477px) {
-    .col-one, .col-two, .col-three {
+
+    .col-one,
+    .col-two,
+    .col-three {
         width: 100%;
         max-width: 300px;
         min-width: 200px;
-        margin: 0 auto; /* Centers the columns horizontally */
+        margin: 0 auto;
+        /* Centers the columns horizontally */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -302,26 +343,37 @@ footer {
         width: 18px;
     }
 
-    .col-two, .col-three {
+    .col-two,
+    .col-three {
         margin: 0 auto;
         text-align: center;
     }
 
-    .col-two p, .col-three p {
+    .col-two p,
+    .col-three p {
         font-size: 14px;
         text-align: center;
     }
-    .col-two ul, .col-three ul{
+
+    .col-two ul,
+    .col-three ul {
         margin-right: 30px;
     }
-    .col-two li::before, .col-three li::before {
-        content: "•";  /* Unicode bullet character */
-        color: black;   /* Adjust color if needed */
+
+    .col-two li::before,
+    .col-three li::before {
+        content: "•";
+        /* Unicode bullet character */
+        color: black;
+        /* Adjust color if needed */
         display: inline-block;
-        width: 1em;     /* Ensure proper spacing */
+        width: 1em;
+        /* Ensure proper spacing */
         margin-right: 5px;
     }
-    .col-two ul li, .col-three ul li {
+
+    .col-two ul li,
+    .col-three ul li {
         font-size: 12px;
         display: flex;
         justify-content: center;
@@ -336,26 +388,37 @@ footer {
     }
 }
 
-@media(max-width: 464px){
-    .col-two, .col-three{
+@media(max-width: 464px) {
+
+    .col-two,
+    .col-three {
         min-width: 200px;
     }
-    .col-three{
+
+    .col-three {
         margin-left: -100px;
     }
 }
-@media(max-width: 450px){
-    .col-two,.col-three{
+
+@media(max-width: 450px) {
+
+    .col-two,
+    .col-three {
         min-width: 200px;
     }
 }
+
 /* Responsive for 425px width */
 @media (max-width: 426px) {
-    .col-one, .col-two, .col-three {
+
+    .col-one,
+    .col-two,
+    .col-three {
         width: 100%;
         max-width: 300px;
         min-width: 200px;
-        margin: 0 auto; /* Centers the columns horizontally */
+        margin: 0 auto;
+        /* Centers the columns horizontally */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -364,7 +427,8 @@ footer {
     }
 
     .col-two {
-        margin-right: 0; /* Removed right margin to ensure centering */
+        margin-right: 0;
+        /* Removed right margin to ensure centering */
     }
 
     .col-one img {
@@ -388,33 +452,45 @@ footer {
         width: 18px;
     }
 
-    .col-two p, .col-three p {
+    .col-two p,
+    .col-three p {
         font-size: 14px;
         text-align: center;
     }
-    .col-two p{
+
+    .col-two p {
         margin-right: 45px;
     }
-    .col-two ul{
+
+    .col-two ul {
         margin-right: 70px;
     }
-    .col-three ul{
+
+    .col-three ul {
         margin-right: 30px;
     }
-    .col-two ul li, .col-three ul li {
+
+    .col-two ul li,
+    .col-three ul li {
         font-size: 12px;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
     }
-    .col-two li::before, .col-three li::before {
-        content: "•";  /* Unicode bullet character */
-        color: black;   /* Adjust color if needed */
+
+    .col-two li::before,
+    .col-three li::before {
+        content: "•";
+        /* Unicode bullet character */
+        color: black;
+        /* Adjust color if needed */
         display: inline-block;
-        width: 1em;     /* Ensure proper spacing */
+        width: 1em;
+        /* Ensure proper spacing */
         margin-right: 5px;
     }
+
     .copyright {
         font-size: 12px;
         margin-top: 10px;
@@ -429,22 +505,30 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        text-align: center; /* Ensures text elements are centered */
+        text-align: center;
+        /* Ensures text elements are centered */
     }
-    .col-one, .col-two, .col-three {
+
+    .col-one,
+    .col-two,
+    .col-three {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
     }
-    .col-two ul, .col-three ul{
+
+    .col-two ul,
+    .col-three ul {
         margin-right: 30px;
     }
+
     .col-two {
         width: 70px;
         min-width: 270px;
-        margin: 0 auto; /* Centers the column horizontally */
+        margin: 0 auto;
+        /* Centers the column horizontally */
         padding-right: 0;
     }
 
@@ -453,33 +537,44 @@ footer {
         justify-content: center;
     }
 
-    .col-two p, .col-three p, 
-    .col-two ul li, .col-three ul li {
+    .col-two p,
+    .col-three p,
+    .col-two ul li,
+    .col-three ul li {
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
     }
-    .col-two li::before, .col-three li::before {
-        content: "•";  /* Unicode bullet character */
-        color: black;   /* Adjust color if needed */
+
+    .col-two li::before,
+    .col-three li::before {
+        content: "•";
+        /* Unicode bullet character */
+        color: black;
+        /* Adjust color if needed */
         display: inline-block;
-        width: 1em;     /* Ensure proper spacing */
+        width: 1em;
+        /* Ensure proper spacing */
         margin-right: 5px;
     }
-    .col-two ul, .col-three ul, 
-    .copyright { /* Fixed the selector */
+
+    .col-two ul,
+    .col-three ul,
+    .copyright {
+        /* Fixed the selector */
         text-align: center;
     }
 }
 
 
 
-@media (max-width: 329px){
-    .col-one{
+@media (max-width: 329px) {
+    .col-one {
         margin-right: 30px;
     }
 }
+
 @media (max-width: 320px) {
     .footer {
         display: flex;
@@ -496,19 +591,25 @@ footer {
         justify-content: center;
         text-align: center;
     }
-    .col-one, .col-two, .col-three {
+
+    .col-one,
+    .col-two,
+    .col-three {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
         margin-bottom: 20px;
     }
-    .col-one p{
+
+    .col-one p {
         margin-left: 20px;
     }
+
     .col-one img {
         display: block;
-        margin: 0 auto 10px auto; /* Centers the logo */
+        margin: 0 auto 10px auto;
+        /* Centers the logo */
     }
 
     .socio-icon {
@@ -522,29 +623,40 @@ footer {
         display: block;
         margin: 0 auto;
     }
-    .col-two, .col-three{
+
+    .col-two,
+    .col-three {
         margin-left: -35px;
     }
-    .col-two li, .col-three li{
+
+    .col-two li,
+    .col-three li {
         margin-left: 1px;
     }
-    .col-two ul, .col-three ul {
+
+    .col-two ul,
+    .col-three ul {
         list-style: none;
         padding: 0;
         margin: 0;
         text-align: center;
     }
-    
-    .col-two li::before, .col-three li::before {
-        content: "•";  /* Unicode bullet character */
-        color: black;   /* Adjust color if needed */
+
+    .col-two li::before,
+    .col-three li::before {
+        content: "•";
+        /* Unicode bullet character */
+        color: black;
+        /* Adjust color if needed */
         display: inline-block;
-        width: 1em;     /* Ensure proper spacing */
+        width: 1em;
+        /* Ensure proper spacing */
         margin-right: 5px;
     }
-    
 
-    .col-two ul li, .col-three ul li {
+
+    .col-two ul li,
+    .col-three ul li {
         text-align: center;
     }
 
