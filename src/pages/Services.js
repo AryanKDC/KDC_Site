@@ -409,7 +409,7 @@ function Services() {
       {/* case studies */}
       <section>
         <div className="case-studies">
-          <Typography variant="h6" sx={{ marginBottom: { xs: "20px", md: "20px" } }}>Case Studies</Typography>
+          <Typography variant="h6" sx={{marginBottom: {xs: "20px" ,md: "20px"}}}>Case Studies</Typography>
           <Box
             className="navigation-buttons"
             sx={{
@@ -743,7 +743,7 @@ function Services() {
                         sx={{
                           fontSize: { xs: "1.2rem", md: "1.3rem" },
                           position: "relative",
-                          top: { xs: "-30px", sm: "-40px", md: "-50px" },
+                          top: { xs: "-30px",sm: "-40px", md: "-50px" },
                           left: { xs: "0px", md: "20px" },
                         }}
                       >
@@ -757,7 +757,7 @@ function Services() {
                           fontSize: { xs: "0.9rem", md: "0.9rem" },
                           position: "relative",
                           left: { xs: "0px", md: "20px" },
-                          top: { xs: "-20px", sm: "-40px", md: "-50px" }, // Adjusted for responsiveness
+                          top: { xs: "-20px",sm: "-40px", md: "-50px" }, // Adjusted for responsiveness
                         }}
                       >
                         {card.description}
@@ -777,7 +777,7 @@ function Services() {
                             color="grey"
                             sx={{
                               position: "relative",
-                              top: { xs: "-10px", sm: "-40px", md: "-50px" },
+                              top: { xs: "-10px",sm: "-40px", md: "-50px" },
                               left: { xs: "0px", md: "20px" },
                             }}
                           >
@@ -807,7 +807,7 @@ function Services() {
                           "@media (max-width: 320px)": {
                             height: "30px",
                           },
-                          top: { xs: "0px", sm: "-30px", md: "-50px" },
+                          top: { xs: "0px",sm: "-30px", md: "-50px" },
                           fontSize: { xs: "10px", md: "12px" },
                           left: { xs: "0px", md: "15px" }, // Fixes overlap on small screens
                         }}
@@ -857,6 +857,7 @@ function Services() {
                 centeredSlides={true}
                 slidesPerView={"auto"}
                 spaceBetween={window.innerWidth < 768 ? 5 : 10}
+                initialSlide={Math.floor(testimonials.length/2)}
                 coverflowEffect={{
                   rotate: 0,
                   stretch: 5,
