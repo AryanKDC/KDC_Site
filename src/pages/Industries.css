@@ -1,0 +1,20 @@
+.what-our-clients-say h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 80px;
+    margin-bottom: -40px;
+    text-align: center;
+}
+
+.animated-box {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animated-box.fade-in {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
