@@ -390,7 +390,7 @@ const Home = () => {
           <Typography
             variant="h2"
             sx={{
-              fontSize: { xs: "22px", sm: "26px", md: "32px" }, // Responsive font size
+              fontSize: { xs: "22px", sm: "26px", md: "32px" },  
               fontWeight: "bold",
               textAlign: "center",
               padding: 5,
@@ -456,17 +456,13 @@ const Home = () => {
                       },
                     }}
                   >
-                    <CardContent
-                    // sx={{
-                    //   // p: { xs: "4px", sm: "11px", md: "12px", lg: "13px", "lx":"15px" }
-                    // }}
-                    >
+                    <CardContent>
                       <Avatar
                         sx={{
                           bgcolor: "#D3D3D3",
-                          width: { xs: 40, sm: 48, md: 50, lg: 54, xl: "64" }, // Decrease width on smaller screens
-                          height: { xs: 40, sm: 48, md: 50, lg: 54, xl: "64" }, // Decrease height on smaller screens
-                          mb: { xs: 1, sm: 2, md: 3 }, // Adjust margin for better spacing
+                          width: { xs: 30, sm: 38, md: 40, lg: 44, xl: "54" },  
+                          height: { xs: 30, sm: 38, md: 40, lg: 44, xl: "54" },  
+                          mb: { xs: 1, sm: 2, md: 3 }, 
                         }}
                       />
 
@@ -481,7 +477,7 @@ const Home = () => {
                             md: "21px",
                             lg: "22px",
                             xl: "24px",
-                          }, // Responsive font size
+                          },  
                           marginBottom: "8px",
                         }}
                       >
@@ -499,7 +495,7 @@ const Home = () => {
                             md: "16px",
                             lg: "18px",
                             xl: "20px",
-                          }, // Smaller font on mobile
+                          }, 
                         }}
                       >
                         {service.description}
