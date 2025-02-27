@@ -390,7 +390,7 @@ const Home = () => {
           <Typography
             variant="h2"
             sx={{
-              fontSize: { xs: "22px", sm: "26px", md: "32px" },  
+              fontSize: { xs: "22px", sm: "26px", md: "32px" }, // Responsive font size
               fontWeight: "bold",
               textAlign: "center",
               padding: 5,
@@ -456,13 +456,17 @@ const Home = () => {
                       },
                     }}
                   >
-                    <CardContent>
+                    <CardContent
+                    // sx={{
+                    //   // p: { xs: "4px", sm: "11px", md: "12px", lg: "13px", "lx":"15px" }
+                    // }}
+                    >
                       <Avatar
                         sx={{
                           bgcolor: "#D3D3D3",
-                          width: { xs: 30, sm: 38, md: 40, lg: 44, xl: "54" },  
-                          height: { xs: 30, sm: 38, md: 40, lg: 44, xl: "54" },  
-                          mb: { xs: 1, sm: 2, md: 3 }, 
+                          width: { xs: 40, sm: 48, md: 50, lg: 50, xl: "64" }, // Decrease width on smaller screens
+                          height: { xs: 40, sm: 48, md: 50, lg: 50, xl: "64" }, // Decrease height on smaller screens
+                          mb: { xs: 1, sm: 2, md: 3 }, // Adjust margin for better spacing
                         }}
                       />
 
@@ -477,7 +481,7 @@ const Home = () => {
                             md: "21px",
                             lg: "22px",
                             xl: "24px",
-                          },  
+                          }, // Responsive font size
                           marginBottom: "8px",
                         }}
                       >
@@ -495,7 +499,7 @@ const Home = () => {
                             md: "16px",
                             lg: "18px",
                             xl: "20px",
-                          }, 
+                          }, // Smaller font on mobile
                         }}
                       >
                         {service.description}
@@ -511,7 +515,7 @@ const Home = () => {
 
       <section className="area-of-expertise">
         <div className="areaofexp">
-          <h2>Area Of Expertise</h2>
+          <Typography variant="h5" sx={{ textAlign: "center", fontSize: "25px", marginBottom: "-10px", marginTop: "-20px" }}>Area of Expertise</Typography>
           <Box
             sx={{
               px: { xs: 7, sm: 9, md: 8, lg: 13, xl: 18 },
@@ -542,7 +546,7 @@ const Home = () => {
               modules={[Pagination, Autoplay]}
               style={{
                 "--swiper-pagination-bottom": "-3px",
-                padding: "19px 0"
+                padding: "19px 0",
               }}
             >
               {areaOfExp.map((service, index) => (
@@ -576,7 +580,12 @@ const Home = () => {
 
       <section>
         <div className="case-studies">
-          <Typography variant="h6" sx={{marginBottom: {xs: "20px" ,md: "20px"}}}>Case Studies</Typography>
+          <Typography
+            variant="h6"
+            sx={{ marginBottom: { xs: "20px", md: "20px" }, marginTop: "-80px" }}
+          >
+            Case Studies
+          </Typography>
           <Box
             className="navigation-buttons"
             sx={{
@@ -772,11 +781,11 @@ const Home = () => {
                 },
                 "@media (min-width: 1024px)": {
                   width: "48%",
-                  right: 22
+                  right: 22,
                 },
                 "@media (min-width: 1240px)": {
                   width: "48%",
-                  right: 15
+                  right: 15,
                 },
                 "@media (min-width: 1500px)": {
                   width: "49%",
@@ -910,7 +919,7 @@ const Home = () => {
                         sx={{
                           fontSize: { xs: "1.2rem", md: "1.3rem" },
                           position: "relative",
-                          top: { xs: "-30px",sm: "-40px", md: "-50px" },
+                          top: { xs: "-30px", sm: "-40px", md: "-50px" },
                           left: { xs: "0px", md: "20px" },
                         }}
                       >
@@ -924,7 +933,7 @@ const Home = () => {
                           fontSize: { xs: "0.9rem", md: "0.9rem" },
                           position: "relative",
                           left: { xs: "0px", md: "20px" },
-                          top: { xs: "-20px",sm: "-40px", md: "-50px" }, // Adjusted for responsiveness
+                          top: { xs: "-20px", sm: "-40px", md: "-50px" }, // Adjusted for responsiveness
                         }}
                       >
                         {card.description}
@@ -944,7 +953,7 @@ const Home = () => {
                             color="grey"
                             sx={{
                               position: "relative",
-                              top: { xs: "-10px",sm: "-40px", md: "-50px" },
+                              top: { xs: "-10px", sm: "-40px", md: "-50px" },
                               left: { xs: "0px", md: "20px" },
                             }}
                           >
@@ -974,7 +983,7 @@ const Home = () => {
                           "@media (max-width: 320px)": {
                             height: "30px",
                           },
-                          top: { xs: "0px",sm: "-30px", md: "-50px" },
+                          top: { xs: "0px", sm: "-30px", md: "-50px" },
                           fontSize: { xs: "10px", md: "12px" },
                           left: { xs: "0px", md: "15px" }, // Fixes overlap on small screens
                         }}
@@ -999,7 +1008,7 @@ const Home = () => {
         <div className="what-our-clients-say">
           <Typography
             variant="h4"
-            sx={{ marginBottom: "5px", textAlign: "center", fontSize: "28px" }}
+            sx={{ marginBottom: "-20px", textAlign: "center", fontSize: "28px" }}
           >
             What Our Client's Say
           </Typography>
@@ -1031,7 +1040,7 @@ const Home = () => {
                 centeredSlides={true}
                 slidesPerView={"auto"}
                 spaceBetween={window.innerWidth < 768 ? 5 : 10}
-                initialSlide={Math.floor(testimonials.length/2)}
+                initialSlide={Math.floor(testimonials.length / 2)}
                 coverflowEffect={{
                   rotate: 0,
                   stretch: 5,
