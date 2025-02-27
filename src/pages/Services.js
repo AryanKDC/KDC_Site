@@ -297,9 +297,8 @@ function Services() {
               flexWrap: "wrap",
               rowGap: 3,
               justifyContent: "center",
-              // 🔹 Padding applied to the outermost container
-              px: { xs: 0.1, sm: 1, md: 1, lg: 0.1, xl: 2.5 }, // Horizontal padding (left & right)
-              py: { xs: 0.1, sm: 1, md: 1 }, // Vertical padding (top & bottom)
+              px: { xs: 0.1, sm: 1, md: 1, lg: 0.1, xl: 2.5 }, 
+              py: { xs: 0.1, sm: 1, md: 1 },  
             }}
           >
             {services.map((service, index) => {
@@ -308,18 +307,18 @@ function Services() {
                   key={index}
                   sx={{
                     width: {
-                      xs: "100%", // Full width on extra small screens
-                      sm: "calc(80% - 40px)", // Increased width for bigger cards on small screens
-                      md: "calc(45% - 5px)", // 2 cards per row on medium screens
-                      lg: "calc(45% - 30px)", // 2 cards per row on large screens
-                      xl: "calc(45% - 46px)", // 2 cards per row on extra-large screens
+                      xs: "100%",  
+                      sm: "calc(80% - 40px)",  
+                      md: "calc(45% - 5px)",   
+                      lg: "calc(45% - 30px)", 
+                      xl: "calc(45% - 46px)", 
                     },
-                    minWidth: "320px", // Slightly increased to prevent shrinking too much
+                    minWidth: "320px", 
                     display: "flex",
                     justifyContent: "center",
-                    mx: "9px", // 🔹 Horizontal margin (left & right)
-                    my: "-15px", // 🔹 Vertical margin (top & bottom)
-                    mb: { xs: "8px", sm: "10px", md: "16px", lg: "10px" }, // 🔹 Bottom margin for spacing
+                    mx: "9px",  
+                    my: "-15px", 
+                    mb: { xs: "8px", sm: "10px", md: "16px", lg: "10px" },  
                   }}
                 >
                   <Card
@@ -328,22 +327,22 @@ function Services() {
                       borderRadius: 3,
                       boxShadow: 0,
                       width: {
-                        xs: "280px", // Slightly bigger on xs
-                        sm: "500px", // Increased size for small screens
+                        xs: "280px",  
+                        sm: "500px",  
                         md: "520px",
                         lg: "600px",
                         xl: "698px",
                       },
                       height: {
-                        xs: "190px", // Slightly bigger on xs
-                        sm: "240px", // Bigger on sm
+                        xs: "190px",  
+                        sm: "240px", 
                         md: "248px",
                         lg: "240px",
                         xl: "270px",
                       },
                       p: {
-                        xs: "6px", // Extra small screens
-                        sm: "16px", // Bigger padding for small screens
+                        xs: "6px", 
+                        sm: "16px",  
                         md: "12px",
                         lg: "18px",
                         xl: "20px",
@@ -355,8 +354,8 @@ function Services() {
                         src={service.img}
                         alt={service.title}
                         sx={{
-                          width: { xs: 50, sm: 60, md: 65, lg: 70, xl: 80 }, // Increased avatar size on sm
-                          height: { xs: 50, sm: 60, md: 65, lg: 70, xl: 80 },
+                          width: { xs: 20, sm: 30, md: 35, lg: 40, xl: 50 }, 
+                          height: { xs: 20, sm: 30, md: 35, lg: 40, xl: 50 },
                           mb: { xs: 1, sm: 2, md: 3 },
                         }}
                       />
@@ -368,12 +367,12 @@ function Services() {
                         sx={{
                           fontSize: {
                             xs: "16px",
-                            sm: "22px", // Bigger title text for sm
+                            sm: "22px",  
                             md: "21px",
                             lg: "22px",
                             xl: "24px",
                           },
-                          marginBottom: "10px", // More spacing below title
+                          marginBottom: "10px",  
                         }}
                       >
                         {service.title}
@@ -386,7 +385,7 @@ function Services() {
                         sx={{
                           fontSize: {
                             xs: "12px",
-                            sm: "16px", // Bigger text for sm
+                            sm: "16px",  
                             md: "16px",
                             lg: "18px",
                             xl: "20px",
