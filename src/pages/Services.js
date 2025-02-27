@@ -297,8 +297,8 @@ function Services() {
               flexWrap: "wrap",
               rowGap: 3,
               justifyContent: "center",
-              px: { xs: 0.1, sm: 1, md: 1, lg: 0.1, xl: 2.5 }, 
-              py: { xs: 0.1, sm: 1, md: 1 },  
+              px: { xs: 0.1, sm: 1, md: 1, lg: 0.1, xl: 2.5 },
+              py: { xs: 0.1, sm: 1, md: 1 },
             }}
           >
             {services.map((service, index) => {
@@ -307,18 +307,18 @@ function Services() {
                   key={index}
                   sx={{
                     width: {
-                      xs: "100%",  
-                      sm: "calc(80% - 40px)",  
-                      md: "calc(45% - 5px)",   
-                      lg: "calc(45% - 30px)", 
-                      xl: "calc(45% - 46px)", 
+                      xs: "100%",
+                      sm: "calc(80% - 40px)",
+                      md: "calc(45% - 5px)",
+                      lg: "calc(45% - 30px)",
+                      xl: "calc(45% - 46px)",
                     },
-                    minWidth: "320px", 
+                    minWidth: "320px",
                     display: "flex",
                     justifyContent: "center",
-                    mx: "9px",  
-                    my: "-15px", 
-                    mb: { xs: "8px", sm: "10px", md: "16px", lg: "10px" },  
+                    mx: "9px",
+                    my: "-15px",
+                    mb: { xs: "8px", sm: "10px", md: "16px", lg: "10px" },
                   }}
                 >
                   <Card
@@ -327,22 +327,22 @@ function Services() {
                       borderRadius: 3,
                       boxShadow: 0,
                       width: {
-                        xs: "280px",  
-                        sm: "500px",  
+                        xs: "280px",
+                        sm: "500px",
                         md: "520px",
                         lg: "600px",
                         xl: "698px",
                       },
                       height: {
-                        xs: "190px",  
-                        sm: "240px", 
+                        xs: "190px",
+                        sm: "240px",
                         md: "248px",
                         lg: "240px",
                         xl: "270px",
                       },
                       p: {
-                        xs: "6px", 
-                        sm: "16px",  
+                        xs: "6px",
+                        sm: "16px",
                         md: "12px",
                         lg: "18px",
                         xl: "20px",
@@ -354,7 +354,7 @@ function Services() {
                         src={service.img}
                         alt={service.title}
                         sx={{
-                          width: { xs: 20, sm: 30, md: 35, lg: 40, xl: 50 }, 
+                          width: { xs: 20, sm: 30, md: 35, lg: 40, xl: 50 },
                           height: { xs: 20, sm: 30, md: 35, lg: 40, xl: 50 },
                           mb: { xs: 1, sm: 2, md: 3 },
                         }}
@@ -367,12 +367,12 @@ function Services() {
                         sx={{
                           fontSize: {
                             xs: "16px",
-                            sm: "22px",  
+                            sm: "22px",
                             md: "21px",
                             lg: "22px",
                             xl: "24px",
                           },
-                          marginBottom: "10px",  
+                          marginBottom: "10px",
                         }}
                       >
                         {service.title}
@@ -385,7 +385,7 @@ function Services() {
                         sx={{
                           fontSize: {
                             xs: "12px",
-                            sm: "16px",  
+                            sm: "16px",
                             md: "16px",
                             lg: "18px",
                             xl: "20px",
@@ -408,7 +408,7 @@ function Services() {
       {/* case studies */}
       <section>
         <div className="case-studies">
-          <Typography variant="h6" sx={{marginBottom: {xs: "20px" ,md: "20px"}}}>Case Studies</Typography>
+          <Typography variant="h6" sx={{ marginBottom: { xs: "20px", md: "20px" } }}>Case Studies</Typography>
           <Box
             className="navigation-buttons"
             sx={{
@@ -742,7 +742,7 @@ function Services() {
                         sx={{
                           fontSize: { xs: "1.2rem", md: "1.3rem" },
                           position: "relative",
-                          top: { xs: "-30px",sm: "-40px", md: "-50px" },
+                          top: { xs: "-30px", sm: "-40px", md: "-50px" },
                           left: { xs: "0px", md: "20px" },
                         }}
                       >
@@ -756,7 +756,7 @@ function Services() {
                           fontSize: { xs: "0.9rem", md: "0.9rem" },
                           position: "relative",
                           left: { xs: "0px", md: "20px" },
-                          top: { xs: "-20px",sm: "-40px", md: "-50px" }, // Adjusted for responsiveness
+                          top: { xs: "-20px", sm: "-40px", md: "-50px" }, // Adjusted for responsiveness
                         }}
                       >
                         {card.description}
@@ -776,7 +776,7 @@ function Services() {
                             color="grey"
                             sx={{
                               position: "relative",
-                              top: { xs: "-10px",sm: "-40px", md: "-50px" },
+                              top: { xs: "-10px", sm: "-40px", md: "-50px" },
                               left: { xs: "0px", md: "20px" },
                             }}
                           >
@@ -806,7 +806,7 @@ function Services() {
                           "@media (max-width: 320px)": {
                             height: "30px",
                           },
-                          top: { xs: "0px",sm: "-30px", md: "-50px" },
+                          top: { xs: "0px", sm: "-30px", md: "-50px" },
                           fontSize: { xs: "10px", md: "12px" },
                           left: { xs: "0px", md: "15px" }, // Fixes overlap on small screens
                         }}
@@ -856,7 +856,7 @@ function Services() {
                 centeredSlides={true}
                 slidesPerView={"auto"}
                 spaceBetween={window.innerWidth < 768 ? 5 : 10}
-                initialSlide={Math.floor(testimonials.length/2)}
+                initialSlide={Math.floor(testimonials.length / 2)}
                 coverflowEffect={{
                   rotate: 0,
                   stretch: 5,
