@@ -274,7 +274,7 @@ const Companies = () => {
 
 
       <section className="mission-vision" style={{ backgroundColor: "#F2F2F2" }}>
-        <Box sx={{ px: { xs: 1, md: 1, lg: 6, xl: 11 }, py: { xs: 6, md: 2 }, overflow: "hidden" }}>
+        <Box sx={{ px: { xs: 1, md: 1, lg: 6, xl: 11 }, py: { xs: 6, md: 8 }, overflow: "hidden" }}>
           {/* Mission Section */}
           <Box
             sx={{
@@ -350,7 +350,6 @@ const Companies = () => {
               alignItems: "center",
               justifyContent: "space-between",
               gap: { xs: 3, sm: 5, md: 8 },
-              mb: { xs: 6, md: 12 },
               px: { xs: 5, sm: 7 },
               paddingTop: { xs: 5, sm: 6 },
               paddingBottom: {xs: 1}
