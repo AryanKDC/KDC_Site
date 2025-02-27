@@ -122,15 +122,15 @@ function Industries() {
             flexDirection: { xs: "column", sm: "column", md: "row" },
             alignItems: "center",
             justifyContent: "space-between",
-            px: { xs: 3, sm: 6, md: 6, lg: 11, xl: 13.5 },
+            px: { xs: 3, sm: 6, md: 6, lg: 8, xl: 13.5 },
             py: { xs: 4, md: 5 },
             overflow: "hidden",
-            width: "100%", // Ensures it stretches across full width
+            width: "100%",
           }}
         >
           {/* Left Content (Text) */}
           <Box
-          className="wow animate__animated animate__fadeInLeft"
+            className="wow animate__animated animate__fadeInLeft"
             data-wow-duration="1.5s"
             sx={{
               flex: { xs: 1, sm: 1.2, md: 1.3 }, // More space for text, especially on tablets
@@ -152,7 +152,6 @@ function Industries() {
                   xl: "32px",
                 },
                 display: "inline-block",
-                p: 1, // Padding inside the heading border
               }}
             >
               {`Ecommerce & Marketplace`}
@@ -177,7 +176,7 @@ function Industries() {
                   lg: "605px",
                   xl: "704px",
                 },
-                p: 1,
+                padding: "10px 0px"
               }}
             >
               "Building secure, scalable eCommerce platforms with smooth product
@@ -248,16 +247,16 @@ function Industries() {
         </Box>
       </section>
 
-      <section id="animated-section" style={{padding: "20px"}}>
+      <section id="animated-section" style={{ padding: "20px" }}>
         <Box
-        className={`animated-box ${isVisible ? "fade-in" : ""}`}
-              data-wow-duration="1.5s"
+          className={`animated-box ${isVisible ? "fade-in" : ""}`}
+          data-wow-duration="1.5s"
           sx={{
             display: "flex",
             alignItems: "center",
             backgroundColor: "#e5e5e5",
-            height: { xs: "auto",sm: "400px", md: "300px", lg: "320px" , xl: "450px"}, // Auto height on small screens, fixed 350px on medium and up
-            width: {xs: "auto",  sm: "auto", md: "700px", lg: "1000px", xl: "1420px"},
+            height: { xs: "auto", sm: "400px", md: "300px", lg: "320px", xl: "450px" }, // Auto height on small screens, fixed 350px on medium and up
+            width: { xs: "auto", sm: "auto", md: "700px", lg: "1000px", xl: "1420px" },
             p: 3,
             borderRadius: 2,
             maxWidth: 1420,
@@ -272,8 +271,8 @@ function Industries() {
             src={mockUpImg} // Replace with your image URL
             alt="Example"
             sx={{
-              width: { xs: "70%",sm: "30%", md: "40%", lg: "40%", xl: "40%" }, // Full width on small screens
-              height: {xs: "auto", sm: "190px", md: "auto", lg: "auto", xl: "auto"},
+              width: { xs: "70%", sm: "30%", md: "40%", lg: "40%", xl: "40%" }, // Full width on small screens
+              height: { xs: "auto", sm: "190px", md: "auto", lg: "auto", xl: "auto" },
               borderRadius: "8px",
               marginRight: { xs: 0, md: 2 },
               marginBottom: { xs: 2, md: 0 }, // Add spacing below image on small screens
@@ -282,21 +281,22 @@ function Industries() {
 
           {/* Text Section */}
           <Box sx={{ width: { xs: "100%", md: "60%" } }}>
-            <Typography 
-            sx={{
-              fontSize: {xs: "14px", sm: "auto", md: "18px", lg: "22px", xl: "28px"}
-            }}
-            variant="h6" 
-            fontWeight="bold">
+            <Typography
+              sx={{
+                fontSize: { xs: "14px", sm: "auto", md: "18px", lg: "22px", xl: "28px" }
+              }}
+              variant="h6"
+              fontWeight="bold">
               "Creating cutting-edge eCommerce apps that are revolutionizing the
               online shopping experience!"
             </Typography>
             <Typography
               variant="body2"
               color="text.secondary"
-              sx={{ marginTop: "10px",
-                fontSize: {xs: "12px", sm: "auto", md: "14px", lg: "16px", xl: "20px"}
-               }}
+              sx={{
+                marginTop: "10px",
+                fontSize: { xs: "12px", sm: "auto", md: "14px", lg: "16px", xl: "20px" }
+              }}
             >
               KDigitalCurry is a leading eCommerce app development company,
               specializing in designing, developing, testing, launching, and
@@ -386,9 +386,9 @@ function Industries() {
                         src={service.img}
                         alt={service.title}
                         sx={{
-                          width: { xs: 40, sm: 48, md: 50, lg: 54, xl: 64 }, // Responsive width
-                          height: { xs: 40, sm: 48, md: 50, lg: 54, xl: 64 }, // Responsive height
-                          mb: { xs: 1, sm: 2, md: 3 }, // Adjust spacing
+                          width: { xs: 40, sm: 48, md: 50, lg: 54, xl: 64 },
+                          height: { xs: 40, sm: 48, md: 50, lg: 54, xl: 64 },
+                          mb: { xs: 1, sm: 2, md: 2 },
                         }}
                       />
 
@@ -435,32 +435,32 @@ function Industries() {
         </div>
       </section>
 
-      <section style={{ padding: "20px"}}>
+      <section style={{ padding: "20px" }}>
         <Box
           sx={{
             textAlign: "left",
             maxWidth: "1400px",
-            width: {xs: "auto", sm: "auto", md: "1000px",},
+            width: { xs: "auto", sm: "auto", md: "1000px", },
             margin: "auto",
             marginBottom: "20px",
             paddingLeft: "20px",
           }}
         >
-          <Typography 
-          sx={{
-            fontSize: {xs: "18px", sm: "18px", md: "21px", lg: "26px", xl: "33px"}
-          }}
-          variant="h5" 
-          fontWeight="bold">
+          <Typography
+            sx={{
+              fontSize: { xs: "18px", sm: "18px", md: "21px", lg: "26px", xl: "33px" }
+            }}
+            variant="h5"
+            fontWeight="bold">
             Case Studies
           </Typography>
         </Box>
         <Box
           sx={{
-            width: {xs: "auto", sm: "auto", md: "1000px",},
-            height: {xs: "auto", sm: "auto", md: "auto", lg: "autp", xl: "auto"},
+            width: { xs: "auto", sm: "auto", md: "1000px", },
+            height: { xs: "auto", sm: "auto", md: "auto", lg: "autp", xl: "auto" },
             maxWidth: "1400px",
-            minHeight: {  xs: "auto" }, // Ensures height on larger screens
+            minHeight: { xs: "auto" }, // Ensures height on larger screens
             margin: "auto",
             padding: "20px",
             backgroundColor: "#f5f5f5",
@@ -477,27 +477,30 @@ function Industries() {
             <Typography
               variant="h5"
               fontWeight="bold"
-              sx={{ marginTop: {xs: "10px", md: "-100px"},
-                fontSize: {xs: "17px", sm: "20px", md: "24px", lg: "27px", xl: "30px"}
-               }}
+              sx={{
+                marginTop: { xs: "10px", md: "-100px" },
+                fontSize: { xs: "17px", sm: "20px", md: "24px", lg: "27px", xl: "30px" }
+              }}
             >
               Project Name
             </Typography>
-            <Typography variant="body1" sx={{ mt: 1, mb: { md: "2"},
-              fontSize: {xs: "12px", sm: "14px", md: "16px", lg: "19px", xl: "22px"}
-             }}>
+            <Typography variant="body1" sx={{
+              mt: 1, mb: { md: "2" },
+              fontSize: { xs: "12px", sm: "14px", md: "16px", lg: "19px", xl: "22px" }
+            }}>
               Lorem ipsum dolor sit amet consectetur. Metus auctor mauris non
               hac pellentesque. Ut mi lectus quis curabitur amet curabitur
               viverra orci faucibus. Magna lorem vitae quis fusce varius
               volutpat commodo nisl.
             </Typography>
-            <Button variant="contained" sx={{ backgroundColor: "#C8102E",
-              height: {xs: "25px"},
-              width: {xs: "155px"},
-              fontSize: {xs: "11px"},
-              marginTop: {xs: "15px"},
-              marginBottom: {sm: "-30px"}
-             }}>
+            <Button variant="contained" sx={{
+              backgroundColor: "#C8102E",
+              height: { xs: "25px" },
+              width: { xs: "155px" },
+              fontSize: { xs: "11px" },
+              marginTop: { xs: "15px" },
+              marginBottom: { sm: "-30px" }
+            }}>
               Explore More
               <img
                 src={arrowImg}
@@ -524,7 +527,7 @@ function Industries() {
                 maxWidth: "500px",
                 height: "auto",
                 borderRadius: "10px",
-                fontSize: {xs: "", sm: "", md: "", lg: "", xl: "33px"}
+                fontSize: { xs: "", sm: "", md: "", lg: "", xl: "33px" }
               }}
             />
           </Box>
